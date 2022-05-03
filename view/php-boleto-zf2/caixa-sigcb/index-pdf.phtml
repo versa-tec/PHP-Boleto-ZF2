@@ -81,55 +81,6 @@
     ";    
     ?>
 
-    <table width="100%" cellspacing=0 cellpadding=0 border=0 class="no-print">
-        <tr>
-            <td valign="top" class="cp">
-                <div style="text-align: center;">Instruções de Impressão</div>
-            </td>
-        </tr>
-        <tr>
-            <td valign=top class="cp">
-                <div style="text-align: left;"><p>
-                    Imprima em impressora jato de tinta (ink jet) ou laser em qualidade normal ou alta (Não use modo
-                    econômico).<br>
-                    Utilize folha A4 (210 x 297 mm) ou Carta (216 x 279 mm) e margens mínimas à esquerda e à direita do
-                    formulário.<br>
-                    Corte na linha indicada. Não rasure, risque, fure ou dobre a região onde se encontra o Código de
-                    barras.<br>
-                    Caso não apareça o Código de barras no final, clique em F5 para atualizar esta tela.
-                    Caso tenha problemas ao imprimir, copie a sequencia numérica abaixo e pague no caixa eletrônico ou
-                    no internet banking:<br>
-                    <br>
-                    <span class="ld2">&nbsp;&nbsp;&nbsp;&nbsp;Linha Digitável: &nbsp;<img
-                            src="<?php echo $this->dados->getBoleto()->getLinhaDigitavel('base64')->render() ?>"/><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Valor: &nbsp;&nbsp;R$ <?php echo number_format($this->dados->getBoleto()->getValor() / 100, 2, ',', '.') ?>
-                        <br>
-                    </span>
-                </div>
-            </td>
-        </tr>
-    </table>
-    <br>
-
-    <table cellspacing=0 cellpadding=0 width="100%" border=0>
-        <tbody>
-        <tr>
-            <td class="ct" width="100%">
-                <img height=1
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApkAAAACAQAAAAA76vpWAAAAGUlEQVR42mNgbDiQYCDBw8ZMPUYDAy0MBQCvGyXfT4/GUQAAAABJRU5ErkJggg=="
-                    width="100%" border="0">
-            </td>
-        </tr>
-        <tr>
-            <td class="ct" width="100%">
-                <div style="text-align: right;">
-                    <b class="cp">Recibo do Pagador</b>
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-
     <table width="100%" cellspacing=5 cellpadding=0 border=0>
         <tr>
             <td width="100%">
